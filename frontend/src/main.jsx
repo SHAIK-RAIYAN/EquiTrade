@@ -1,11 +1,15 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import HomePage from "./landing_page/home/HomePage";
 
-createRoot(document.getElementById('root')).render(
+import { ReactLenis } from "lenis/react";
+
+
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <div>
-      <h1>Hello</h1>
-    </div>
-  </StrictMode>,
-)
+    <ReactLenis root>
+      <HomePage />
+    </ReactLenis>
+  </StrictMode>
+);

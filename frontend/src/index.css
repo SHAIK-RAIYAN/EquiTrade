@@ -1,28 +1,29 @@
 /* =========================
    Global Theme Variables
    ========================= */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap");
 :root {
-  --primary: #387ED1;
-  --primary-700: #2F67B0;
-  --primary-300: #7FAEF5;
-  --primary-100: #EAF4FF;
+  --primary: #387ed1;
+  --primary-700: #2f67b0;
+  --primary-300: #7faef5;
+  --primary-100: #eaf4ff;
 
-  --gold: #D4A017;
-  --gold-600: #C99314;
-  --gold-300: #F2D28A;
+  --gold: #d4a017;
+  --gold-600: #c99314;
+  --gold-300: #f2d28a;
 
-  --bg: #F7FAFC;
-  --surface: #FFFFFF;
-  --text: #0F1724;
-  --muted: #6B7280;
-  --border: #E6EEF9;
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --text: #0f1724;
+  --muted: #6b7280;
+  --border: #e6eef9;
 
-  --success: #22C55E;
-  --danger: #EF4444;
-  --info: #06B6D4;
-  --warning: #F59E0B;
+  --success: #22c55e;
+  --danger: #ef4444;
+  --info: #06b6d4;
+  --warning: #f59e0b;
 
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Source Sans 3", system-ui, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -39,9 +40,9 @@
 /* Dark theme overrides */
 [data-theme="dark"] {
   --bg: #071028;
-  --surface: #0F1724;
-  --text: #E6EEF8;
-  --muted: #9AA8BF;
+  --surface: #0f1724;
+  --text: #e6eef8;
+  --muted: #9aa8bf;
   --border: #162029;
 }
 
@@ -50,12 +51,17 @@
    ========================= */
 body {
   margin: 0;
-  min-width: 320px;
+  min-width: 100vw;
   min-height: 100vh;
   background-color: var(--bg);
   color: var(--text);
   display: flex;
   flex-direction: column;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  overflow-x: hidden;
+}
+html {
+  overflow-x: hidden;
 }
 
 a {
@@ -68,15 +74,22 @@ a:hover {
   color: var(--primary-700);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #424242;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 4px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -91,6 +104,11 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 3px solid var(--primary-300);
+}
+
+p {
+  font-size: 1.15rem;
+  line-height: 1.5;
 }
 
 /* Muted text utility */
