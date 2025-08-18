@@ -1,11 +1,9 @@
 import React from "react";
-import { slideInFromBottom } from "../../public/animationHelperMotion";
-import {motion} from "framer-motion";
 
 function Footer() {
   return (
-    <motion.div
-      {...slideInFromBottom}
+    <div
+
       className="container-fluid mt-5 pt-3 px-lg-5 border-top"
       style={{ backgroundColor: "#fbfbfb" }}>
       <footer className="text-start col-lg-9 mx-auto ">
@@ -69,37 +67,37 @@ function Footer() {
                     <h5 className="mb-4">Account</h5>
 
                     <ul className="list-unstyled mb-0">
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Open demat account
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Minor demat account
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           NRI demat account
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Commodity
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Dematerialisation
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Fund transfer
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Referral program
                         </a>
@@ -110,37 +108,37 @@ function Footer() {
                   <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 className="mb-4">Support</h5>
                     <ul className="list-unstyled mb-0">
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Contact us
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Support portal
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           How to file a complaint?
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Status of your complaints
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Bulletin
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Circular
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Downloads
                         </a>
@@ -151,37 +149,37 @@ function Footer() {
                   <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 className="mb-4">Company</h5>
                     <ul className="list-unstyled mb-0">
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           About
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Philosophy
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Press & media
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Careers
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           EquiTrade Cares (CSR)
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           EquiTrade.tech
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Open source
                         </a>
@@ -192,37 +190,37 @@ function Footer() {
                   <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 className="mb-4">Quick links</h5>
                     <ul className="list-unstyled mb-0">
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Upcoming IPOs
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Brokerage charges
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Market holidays
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Economic calendar
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Calculators
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Markets
                         </a>
                       </li>
-                      <li className="mb-4">
+                      <li className="mb-0 mb-md-2 mb-lg-4">
                         <a href="#!" className="text-muted link-primary">
                           Sectors
                         </a>
@@ -343,7 +341,7 @@ function Footer() {
           </ul>
         </div>
       </footer>
-    </motion.div>
+    </div>
   );
 }
 

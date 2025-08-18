@@ -1,10 +1,11 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white border-bottom">
       <div className="container-lg d-flex justify-content-between align-items-center">
-        <a className="navbar-brand d-flex align-items-center" href="#">
+        <NavLink to="/" className="navbar-brand d-flex align-items-center">
           <img
             src="media/logo.svg"
             alt="Logo"
@@ -12,7 +13,7 @@ function Navbar() {
             style={{ height: "2.5rem", width: "auto" }}
           />
           {/*  logo */}
-        </a>
+        </NavLink>
 
         {/* Toggler */}
         <button
@@ -31,29 +32,49 @@ function Navbar() {
           id="navbarTogglerDemo03">
           <ul className="navbar-nav gap-3">
             <li className="nav-item ">
-              <a className="nav-link" href="#">
+              <NavLink
+                to="/signup"
+                className={({ isActive }) =>
+                  "nav-link" + (isActive ? " active" : "")
+                }>
                 Signup
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="#">
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  "nav-link" + (isActive ? " active" : "")
+                }>
                 About
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="#">
+              <NavLink
+                to="/products"
+                className={({ isActive }) =>
+                  "nav-link" + (isActive ? " active" : "")
+                }>
                 Products
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="#">
+              <NavLink
+                to="/pricing"
+                className={({ isActive }) =>
+                  "nav-link" + (isActive ? " active" : "")
+                }>
                 Pricing
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item ">
-              <a className="nav-link" href="#">
+              <NavLink
+                to="/support"
+                className={({ isActive }) =>
+                  "nav-link" + (isActive ? " active" : "")
+                }>
                 Support
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

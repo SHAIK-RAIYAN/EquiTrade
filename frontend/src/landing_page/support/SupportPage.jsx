@@ -1,15 +1,13 @@
-import Footer from "../Footer";
-import Navbar from "../Navbar";
 import Categories from "./Categories";
 import SupportSearch from "./SupportSearch";
 
 function SupportPage() {
-    return (<>
-        <Navbar/>
-        <SupportSearch />
-        <Categories/>
-        <Footer/>
-    </>);
+  return (
+    <>
+      <SupportSearch />
+      <Categories />
+    </>
+  );
 }
 
 export default SupportPage;

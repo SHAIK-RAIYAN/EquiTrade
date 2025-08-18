@@ -20,9 +20,16 @@ export const slideInFromBottom = {
   transition: { type: "spring", stiffness: 50 },
 };
 
+export const slideInFromTop = {
+  initial: { y: "-100%" },
+  animate: { y: 0 },
+  viewport: { once: true },
+  transition: { type: "tween", duration: 0.5 },
+};
+
 export const appear = {
-  initial: { opacity: 0 },
-  whileInView: { opacity: 1 },
+  initial: { opacity: 0, scale: 0.8 },
+  whileInView: { opacity: 1, scale: 1 },
   viewport: { amount: 0.04, once: true },
-  transition: { type: "spring", stiffness: 40, damping: 20 },
+  transition: { type: "spring", stiffness: 50, damping: 20 },
 };
