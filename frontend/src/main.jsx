@@ -15,7 +15,13 @@ import Navbar from "./landing_page/Navbar";
 import NotFound from "./landing_page/NotFound";
 
 createRoot(document.getElementById("root")).render(
-  <ReactLenis root>
+  <ReactLenis
+    root
+    options={{
+      lerp: 0.2, // faster scroll
+      smooth: true,
+      syncTouch: true,
+    }}>
     <BrowserRouter>
       <Navbar />
       <Routes>

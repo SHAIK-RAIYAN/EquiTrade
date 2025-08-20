@@ -7,7 +7,7 @@ import {
 
 function Hero() {
   return (
-    <div className="container p-3 p-5 ">
+    <div className="container p-5 ">
       <div className="row text-center">
         <motion.img
           {...slideInFromBottom}
