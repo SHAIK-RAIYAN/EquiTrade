@@ -20,9 +20,9 @@ export const slideInFromBottom = {
 };
 
 export const slideInFromTop = {
-  initial: { y: "-100%" },
-  animate: { y: 0 },
-  viewport: { once: true },
+  initial: { y: "-100%", opacity: 0 },
+  animate: { y: 0, opacity: 1 },
+  viewport: { amount: 0.04, once: true },
   transition: { type: "tween", duration: 0.5 },
 };
 
@@ -32,7 +32,6 @@ export const appear = {
   viewport: { amount: 0.04, once: true },
   transition: { type: "spring", stiffness: 50, damping: 20 },
 };
-
 
 export const slideLeftFromMiddle = {
   initial: { x: "30%", opacity: 0 },
@@ -48,8 +47,8 @@ export const slideRightFromMiddle = {
   transition: { type: "spring", stiffness: 50, damping: 20 },
 };
 
-
-export const rotateX = { // not used
+export const rotateX = {
+  // not used
   initial: { rotateX: 90, opacity: 0 },
   whileInView: { rotateX: 0, opacity: 1 },
   viewport: { amount: 0.4, once: true },

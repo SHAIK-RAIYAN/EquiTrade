@@ -37,15 +37,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Dark theme overrides */
-[data-theme="dark"] {
-  --bg: #071028;
-  --surface: #0f1724;
-  --text: #e6eef8;
-  --muted: #9aa8bf;
-  --border: #162029;
-}
-
 /* =========================
    Base Element Styling
    ========================= */
@@ -125,20 +116,18 @@ p {
 }
 
 /* =========================
+   bootstrap class changes
+   ========================= */
+.active {
+  color: #387ed1 !important;
+  font-weight: 500;
+}
+
+/* =========================
    Responsive Typography
    ========================= */
 @media (max-width: 768px) {
   h1 {
     font-size: 2.2em;
-  }
-}
-
-/* =========================
-   Light Theme Specific
-   ========================= */
-@media (prefers-color-scheme: light) {
-  :root {
-    color: var(--text);
-    background-color: var(--bg);
   }
 }

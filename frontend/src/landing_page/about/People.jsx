@@ -1,25 +1,27 @@
 import React from "react";
+import { appear, slideInFromRight } from "../../../public/animationHelperMotion";
+import { motion } from "framer-motion";
 
 function People() {
   return (
     <div className="container p-lg-5">
-      <div className="row text-center mb-5">
+      <motion.div {...appear} className="row text-center mb-5">
         <h3>People</h3>
-      </div>
+      </motion.div>
 
       <div className="row align-items-center">
-        <div className="col-md-4 text-center">
+        <motion.div {...appear} className="col-md-4 text-center">
           <img
             src="media/images/founder.jpg"
             alt="Founder"
             className="img-fluid rounded-circle"
             style={{ width: "250px", height: "250px", objectFit: "cover" }}
           />
-          <h5 className="fw-semibold">Shaik Raiyan</h5>
+          <h5 className="fw-semibold my-2">Shaik Raiyan</h5>
           <p className="text-muted">Founder, CEO</p>
-        </div>
+        </motion.div>
 
-        <div className="col-md-8">
+        <motion.div {...slideInFromRight} className="col-md-8">
           <p>
             Raiyan bootstrapped and founded <strong>EquiTrade</strong> in 2025
             to overcome the hurdles he faced during his journey as a trader.
@@ -45,7 +47,7 @@ function People() {
               Twitter
             </a>
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

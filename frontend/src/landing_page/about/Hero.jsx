@@ -1,18 +1,23 @@
 import React from "react";
-
+import { slideInFromRight, slideInFromTop } from "../../../public/animationHelperMotion";
+import { motion } from "framer-motion";
+import { slideInFromLeft } from './../../../public/animationHelperMotion';
+  
 function Hero() {
   return (
     <div className="container">
-      <div className="row p-md-5 text-center mx-auto">
+      <motion.div
+        {...slideInFromTop}
+        className="row p-md-5 text-center mx-auto">
         <h3 className="py-5">
           We pioneered the discount broking model in India.
           <br />
           Now, we are breaking ground with our technology.
         </h3>
-      </div>
+      </motion.div>
       <hr className="text-muted" />
       <div className="row py-5 mt-5 mx-md-5">
-        <div className="col-md-6 my-lg-3">
+        <motion.div {...slideInFromLeft} className="col-md-6 my-lg-3">
           <p className="mx-lg-5 text-muted">
             We kick-started operations on the 15th of August, 2010 with the goal
             of breaking all barriers that traders and investors face in India in
@@ -29,8 +34,8 @@ function Hero() {
             our powerful ecosystem of investment platforms, contributing over
             15% of all Indian retail trading volumes.
           </p>
-        </div>
-        <div className="col-md-6 my-lg-3">
+        </motion.div>
+        <motion.div {...slideInFromRight} className="col-md-6 my-lg-3">
           <p className="mx-lg-5 text-muted">
             In addition, we run a number of popular open online educational and
             community initiatives to empower retail traders and investors.
@@ -45,7 +50,7 @@ function Hero() {
             the latest updates on our blog or see what the media is saying about
             us or learn more about our business and product philosophies.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
