@@ -18,7 +18,7 @@ createRoot(document.getElementById("root")).render(
   <ReactLenis
     root
     options={{
-      lerp: 0.2, // faster scroll
+      lerp: 0.2, // scroll sensitivity
       smooth: true,
       syncTouch: true,
     }}>
