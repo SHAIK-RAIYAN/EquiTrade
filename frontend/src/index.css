@@ -78,7 +78,7 @@ h1 {
   line-height: 1.1;
 }
 
-td{
+td {
   line-height: 2;
 }
 
@@ -126,6 +126,26 @@ p {
   color: #387ed1 !important;
   font-weight: 500;
 }
+
+.accordion-button {
+  background-color: white !important;
+  color: #333 !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:hover {
+  border: 1px solid #ccc;
+  transform: scale(1.03);
+}
+
+.accordion-collapse {
+  transition: all 0.4s ease;
+}
+
+.accordion-button {
+  transition: transform 0.25s ease;
+}
+
 
 /* =========================
    Responsive Typography
